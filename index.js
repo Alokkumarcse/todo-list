@@ -91,6 +91,7 @@ let taskCount = () => {
 (() => {
   dataStore = JSON.parse(localStorage.getItem('data'))|| [];
   createTask();
+  taskCount();
 })();
 
 
