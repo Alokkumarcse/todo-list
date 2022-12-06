@@ -14,7 +14,10 @@ let takeDataFromUser = () => {
   if(input.value === ""){
     return;
   }else{
-    dataStore.push({'task': input.value});
+    //push data into dataStore
+    dataStore.push({
+      'task': input.value,
+    });
     // storing data into local storage
     localStorage.setItem('data', JSON.stringify(dataStore));
     // invoke createTask() to make task card
