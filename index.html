@@ -11,57 +11,57 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <!-- container -->
-  <div>
+  <!-- main container -->
+  <div id="main__container" class="mp">
     <!-- app container -->
-    <div class="app__container">
+    <div class="app__container mp">
       <!--! input container -->
-      <div class="input__container">
+      <div class="input__container df mtb">
         <i class="fa-sharp fa-solid fa-clipboard"></i>
         <input type="text" id="input" placeholder="Add your todo list">
-        <i class="fa-sharp fa-solid fa-circle-plus"></i>
+        <i class="fa-sharp fa-solid fa-circle-plus" id="add__btn"></i>
       </div>
-      <!-- todo list container -->
-      <div class="todo__list">
-        <!-- navbar section-->
-        <section class="list__navbar">
+      <!-- ! task list section -->
+      <section class="task__list">
+        <!-- info navbar-->
+        <div class="info__navbar ">
           <span>
             <i class="fa-solid fa-check-double"></i>
             <span>Complete all task</span>
           </span>
           <span>Clear completed</span>
-        </section>
+        </div>
         <!-- thematic break -->
         <hr>
-        <!-- ! task list section-->
-        <section>
+        <!-- task list contianer-->
+        <div>
           <div class="list__card">
             <span>
               <i class="fa-regular fa-circle"></i>
-              <p>Task 1</p>
+              <span>Task added by Alok...</span>
             </span>
             <span>
-              <i class="fa-regular fa-circle-xmark"></i>
+              <i class="fa-regular fa-circle-xmark" id="delete__btn"></i>
             </span>
           </div>
-        </section>
+        </div>
         <!--  thematic break -->
         <hr>
         <!-- ! footer section -->
-        <footer>
+        <footer class="df">
           <!-- task count -->
           <div class="task__left">
             <span id="task__number">12</span>
-            <span>task left</span>
+            <span>Task left</span>
           </div>
           <!-- show specific task list -->
-          <div id="show__task">
+          <div id="show__task" class="df">
             <span>All</span>
             <span>Uncomplete</span>
             <span>Completed</span>           
           </div>
         </footer>
-      </div>
+      </section>
     </div>
   </div>
 

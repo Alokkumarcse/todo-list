@@ -1,0 +1,151 @@
+/**
+* ! Removing default style 
+**/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/**
+* ! commont styles
+**/
+.mp{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.mtb{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.df{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 12px;
+}
+
+hr{
+  display: block;
+  height: 5px;
+  border:0;
+  border-top: 1px solid rgba(163, 151, 151, 0.356);
+  padding: 0;
+}
+
+/* hr { display: block; height: 1px;
+  border: 0; border-top: 1px solid #ccc;
+  margin: 1em 0; padding: 0; } */
+
+/* main container */
+#main__container{
+  border: 2px solid green;
+  background-color: rgb(155, 149, 149);
+}
+
+/* app contianer */
+.app__container{
+ border: 2px solid red;
+ background-color: rgb(197, 176, 176);
+}
+
+/**
+* ! user input container 
+**/
+.input__container{
+  border: 2px solid gray;
+  justify-content: space-between;
+  gap:10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input__container input{
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+}
+
+.input__container i{
+  font-size: 30px;
+  color:rgba(107, 105, 104, 1)
+}
+
+#add__btn{
+  cursor: pointer;
+}
+
+.input__container:hover{
+  background-color: rgb(228, 236, 234);
+  cursor: text;
+}
+
+::-webkit-input-placeholder {
+  color: black; /*Change the placeholder color*/
+  opacity: 0.2; /*Change the opacity between 0 and 1*/
+  font-size: 15px;
+}
+
+/**
+* ! task list section
+**/
+
+/* info navbar */
+.info__navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  opacity: .4;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* task list contianer */
+.list__card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#delete__btn{
+  color:rgb(158, 19, 19);
+  display: none;
+}
+
+.list__card:hover #delete__btn{
+  display: flex;
+  cursor: pointer;
+}
+
+/* footer section */
+footer{
+  margin-left: 20px;
+  font-size: 13px;
+  color:gray;
+  margin-bottom: 10px;
+}
+
+#task__number{
+  color:rgb(29, 28, 28);
+}
+
+#show__task{
+  
+}
+
