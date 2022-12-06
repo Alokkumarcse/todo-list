@@ -16,7 +16,7 @@
     <!-- app container -->
     <div class="app__container mp">
       <!--! input container -->
-      <div class="input__container df mtb">
+      <div class="input__container df mtb" id="inputDiv">
         <i class="fa-sharp fa-solid fa-clipboard"></i>
         <input type="text" id="input" placeholder="Add your todo list">
         <i class="fa-sharp fa-solid fa-circle-plus" id="add__btn"></i>
@@ -34,24 +34,14 @@
         <!-- thematic break -->
         <hr>
         <!-- task list contianer-->
-        <div>
-          <div class="list__card">
-            <span>
-              <i class="fa-regular fa-circle"></i>
-              <span>Task added by Alok...</span>
-            </span>
-            <span>
-              <i class="fa-regular fa-circle-xmark" id="delete__btn"></i>
-            </span>
-          </div>
-        </div>
+        <div id="list__container"> </div>
         <!--  thematic break -->
         <hr>
         <!-- ! footer section -->
         <footer class="df">
           <!-- task count -->
           <div class="task__left">
-            <span id="task__number">12</span>
+            <span id="task__number">0</span>
             <span>Task left</span>
           </div>
           <!-- show specific task list -->
