@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo-list</title>
+  <!-- fontawsome icon CDN -->
+  <script src="https://kit.fontawesome.com/9d34235b2f.js" crossorigin="anonymous"></script>
+  <!-- style sheet here -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- container -->
+  <div>
+    <!-- app container -->
+    <div class="app__container">
+      <!--! input container -->
+      <div class="input__container">
+        <i class="fa-sharp fa-solid fa-clipboard"></i>
+        <input type="text" id="input" placeholder="Add your todo list">
+        <i class="fa-sharp fa-solid fa-circle-plus"></i>
+      </div>
+      <!-- todo list container -->
+      <div class="todo__list">
+        <!-- navbar section-->
+        <section class="list__navbar">
+          <span>
+            <i class="fa-solid fa-check-double"></i>
+            <span>Complete all task</span>
+          </span>
+          <span>Clear completed</span>
+        </section>
+        <!-- thematic break -->
+        <hr>
+        <!-- ! task list section-->
+        <section>
+          <div class="list__card">
+            <span>
+              <i class="fa-regular fa-circle"></i>
+              <p>Task 1</p>
+            </span>
+            <span>
+              <i class="fa-regular fa-circle-xmark"></i>
+            </span>
+          </div>
+        </section>
+        <!--  thematic break -->
+        <hr>
+        <!-- ! footer section -->
+        <footer>
+          <!-- task count -->
+          <div class="task__left">
+            <span id="task__number">12</span>
+            <span>task left</span>
+          </div>
+          <!-- show specific task list -->
+          <div id="show__task">
+            <span>All</span>
+            <span>Uncomplete</span>
+            <span>Completed</span>           
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</body>
+  <!-- javascript file linked here -->
+  <script src="./index.js"></script>
+</html>
